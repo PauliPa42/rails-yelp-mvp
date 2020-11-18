@@ -1,1 +1,18 @@
 // Specific CSS for your home-page
+.container {
+  width: 40%;
+  margin-top: 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align_items: center;
+}
+
+.to-do {
+  display: flex;
+  justify-content: space-around;
+  align_items: center;
+  padding: 10px;
+}

@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Add a New Review for <%= @restaurant.name %></h1>
+
+
+  <%= simple_form_for [ @restaurant, @review ] do |f| %>
+  <%= f.input :rating, as: :numeric, :hint => 'Choose between 0 and 5' %>
+  <%= f.input :content, as: :text %>
+  <%= f.submit "Add review", class: "btn btn-secondary" %>
+  <% end %>
+
+</div>
